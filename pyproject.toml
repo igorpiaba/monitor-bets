@@ -1,0 +1,12 @@
+[project]
+name = "monitor-bets"
+version = "0.1.0"
+description = "Acompanha a volta das casas de apostas bloqueadas pela MP 1.394/2026"
+requires-python = ">=3.12"
+dependencies = ["httpx"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
