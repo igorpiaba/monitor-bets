@@ -143,6 +143,7 @@
     🔴 bloqueada = redireciona para o gov.br ou mostra aviso de suspensão.
     🟢 respondendo = a página abre sem aviso conhecido (não garante que aceita apostas).
     ⚪ indeterminada = anti-robô, erro ou página vazia.
+    "lista judicial" = consta na lista da SPA de autorizadas por decisão judicial, anterior à MP (não é permissão para operar agora).
     Lista oficial da SPA/Ministério da Fazenda. Checagem a cada ~10 minutos.
   </footer>
 </main>
@@ -208,7 +209,11 @@
     lista.replaceChildren(...visiveis.map((s) => {
       const nome = el("div", { className: "nome" }, s.casa,
         el("a", { href: `https://${s.site}/`, target: "_blank", rel: "noopener", textContent: s.site }));
-      if (s.liminar) nome.append(el("span", { className: "etiqueta", textContent: "liminar" }));
+      if (s.liminar) nome.append(el("span", {
+        className: "etiqueta",
+        textContent: "lista judicial",
+        title: "Consta na lista da SPA de empresas autorizadas por decisão judicial (anterior à MP 1.394/2026). Não significa permissão para operar agora.",
+      }));
       return el("li", { className: s.status },
         el("span", { className: "bolinha", title: ROTULO[s.status] }),
         el("div", {}, nome, el("div", {
