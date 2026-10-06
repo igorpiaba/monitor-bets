@@ -1,0 +1,27 @@
+name: Descobrir canal do Telegram
+
+# Uso único: lista os chats que o bot enxerga (nome e número), para configurar TELEGRAM_CHAT_ID.
+on:
+  workflow_dispatch:
+
+jobs:
+  descobrir:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Listar chats
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+        run: |
+          curl -s "https://api.telegram.org/bot${TELEGRAM_TOKEN}/getUpdates" | python3 -c '
+          import json, sys
+          dados = json.load(sys.stdin)
+          if not dados.get("ok"):
+              print("Erro do Telegram:", dados.get("description")); sys.exit(1)
+          chats = {}
+          for u in dados["result"]:
+              for chave in ("channel_post", "message", "my_chat_member"):
+                  if chave in u:
+                      c = u[chave]["chat"]; chats[c["id"]] = (c.get("type"), c.get("title") or c.get("username"))
+          for i, (tipo, nome) in chats.items(): print(f"{i}  {tipo}  {nome}")
+          if not chats: print("Nenhum chat encontrado: publique uma mensagem no canal e rode de novo.")
+          '
