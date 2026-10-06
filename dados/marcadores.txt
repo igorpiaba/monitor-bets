@@ -12,3 +12,5 @@ encerramento das atividades
 voltamos em breve
 voltaremos em breve
 encerrou suas atividades
+# apostar.bet.br: lobby vazio, sem jogos
+dia de sorte: título vazio
