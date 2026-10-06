@@ -17,15 +17,12 @@ def _tamanho(texto: str) -> int:
 
 def _linha(m: Mudanca) -> str:
     if m.para == RESPONDENDO:
-        texto = (
-            f"🟢 {m.casa} ({m.site}) parou de redirecionar para o gov.br "
-            "e está respondendo."
-        )
+        texto = f"🟢 {m.casa} ({m.site}) voltou a abrir sem aviso de bloqueio."
         if m.de == BLOQUEADO:
             desde = datetime.fromisoformat(m.desde_anterior).strftime("%d/%m %H:%M")
-            texto += f" Bloqueada desde {desde}."
+            texto += f" Fora do ar desde {desde}."
         return texto
-    return f"🔴 {m.casa} ({m.site}) voltou a redirecionar para o gov.br."
+    return f"🔴 {m.casa} ({m.site}) voltou a ficar fora do ar."
 
 
 def montar_mensagens(mudancas: list[Mudanca], painel_url: str) -> list[str]:

@@ -85,7 +85,7 @@ def test_mudanca_confirmada_avisa_e_registra(pasta):
     historico = (pasta / "historico.csv").read_text(encoding="utf-8").splitlines()
     assert len(historico) == 2
     assert len(telegram.chamadas) == 1
-    assert "parou de redirecionar" in telegram.chamadas[0][0]
+    assert "voltou a abrir sem aviso" in telegram.chamadas[0][0]
     assert "Painel: https://painel" in telegram.chamadas[0][0]
 
 
@@ -106,3 +106,14 @@ def test_falha_no_envio_guarda_e_reenvia(pasta):
     assert telegram.chamadas[1] == telegram.chamadas[0]
     estado = json.loads((pasta / "status.json").read_text(encoding="utf-8"))
     assert estado["avisos_pendentes"] == []
+
+
+def test_sem_telegram_guarda_avisos(pasta):
+    internet = Internet()
+    rodar(pasta, internet, None, 0)
+    internet.respondendo.add("a.bet.br")
+    rodar(pasta, internet, None, 10)
+    rodar(pasta, internet, None, 20)
+
+    estado = json.loads((pasta / "status.json").read_text(encoding="utf-8"))
+    assert [a["site"] for a in estado["avisos_pendentes"]] == ["a.bet.br"]

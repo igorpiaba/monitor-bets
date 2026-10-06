@@ -11,6 +11,8 @@ from monitor.arquivos import Casa
 from monitor.checar import BLOQUEADO, INDETERMINADO, RESPONDENDO, Resultado
 
 LIMITE_DESCARTE = 0.5
+# Motivos que indicam falha de rede do nosso lado (não anti-robô nem página de erro).
+FALHA_DE_REDE = ("timeout", "erro de conexão", "erro:", "navegador:")
 
 
 @dataclass(frozen=True)
@@ -36,6 +38,14 @@ def _definido(status: str) -> str | None:
     return None if status == INDETERMINADO else status
 
 
+def _alertar(para: str, ultimo: str | None) -> bool:
+    # Avisa a volta (🟢) e o novo bloqueio de quem estava no ar (🟢 → 🔴).
+    # Passagens por ⚪ não contam: 🔴 → ⚪ → 🔴 e ⚪ → 🔴 não são notícia.
+    if para == RESPONDENDO:
+        return ultimo != RESPONDENDO
+    return para == BLOQUEADO and ultimo == RESPONDENDO
+
+
 def _totais(sites: dict) -> dict:
     totais = {BLOQUEADO: 0, RESPONDENDO: 0, INDETERMINADO: 0}
     for s in sites.values():
@@ -52,13 +62,17 @@ def aplicar_rodada(
     novo.setdefault("avisos_pendentes", [])
     anteriores = novo.get("sites", {})
 
-    # Muita coisa indeterminada ao mesmo tempo = problema de rede do nosso lado.
-    indeterminados = sum(r.status == INDETERMINADO for r in observados.values())
-    if observados and indeterminados / len(observados) > LIMITE_DESCARTE:
+    # Muita falha de rede ao mesmo tempo = problema do nosso lado: descarta a rodada.
+    falhas = sum(
+        r.status == INDETERMINADO and r.motivo.startswith(FALHA_DE_REDE)
+        for r in observados.values()
+    )
+    if observados and falhas / len(observados) > LIMITE_DESCARTE:
         novo.setdefault("sites", {})
         novo.setdefault("totais", _totais(novo["sites"]))
         return novo, []
 
+    novo["ultima_rodada_valida"] = agora_iso
     sites = {}
     mudancas = []
     for casa in casas:
@@ -82,12 +96,10 @@ def aplicar_rodada(
             }
             continue
 
-        atual.update(
-            casa=casa.casa, liminar=casa.liminar, motivo=r.motivo, ultima_checagem=agora_iso
-        )
+        atual.update(casa=casa.casa, liminar=casa.liminar, ultima_checagem=agora_iso)
         pendente = atual.get("pendente")
         if r.status == atual["status"]:
-            atual["pendente"] = None
+            atual.update(motivo=r.motivo, pendente=None)
         elif pendente and pendente["status"] == r.status:
             ultimo = atual.get("ultimo_definido")
             mudancas.append(
@@ -99,14 +111,16 @@ def aplicar_rodada(
                     para=r.status,
                     motivo=r.motivo,
                     desde_anterior=atual["desde"],
-                    alertar=r.status != INDETERMINADO and r.status != ultimo,
+                    alertar=_alertar(r.status, ultimo),
                 )
             )
-            atual.update(status=r.status, desde=agora_iso, pendente=None)
+            atual.update(status=r.status, desde=agora_iso, motivo=r.motivo, pendente=None)
             if r.status != INDETERMINADO:
                 atual["ultimo_definido"] = r.status
+        elif r.status == INDETERMINADO and pendente and pendente["status"] != INDETERMINADO:
+            pass  # ⚪ é "sem informação": não apaga uma mudança 🟢/🔴 em confirmação
         else:
-            atual["pendente"] = {"status": r.status, "visto_em": agora_iso}
+            atual["pendente"] = {"status": r.status, "visto_em": agora_iso, "motivo": r.motivo}
         sites[casa.site] = atual
 
     novo["sites"] = sites

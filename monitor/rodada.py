@@ -47,13 +47,12 @@ def executar(
     a_avisar = [Mudanca.de_dict(d) for d in novo["avisos_pendentes"]]
     a_avisar += [m for m in mudancas if m.alertar]
     mensagens = montar_mensagens(a_avisar, painel_url)
-    if mensagens and enviar_fn:
-        ok = enviar_fn(mensagens)
-        novo["avisos_pendentes"] = [] if ok else [m.para_dict() for m in a_avisar]
-    else:
+    ok = bool(mensagens) and enviar_fn is not None and enviar_fn(mensagens)
+    if mensagens and not ok:
+        # Sem Telegram (token ausente) ou falha no envio: guarda para a próxima rodada.
         for msg in mensagens:
             print(msg)
-        novo["avisos_pendentes"] = []
+    novo["avisos_pendentes"] = [] if ok or not a_avisar else [m.para_dict() for m in a_avisar]
 
     salvar_estado(pasta_dados / "status.json", novo)
     return mudancas
@@ -69,12 +68,9 @@ def main() -> None:
         cliente_tg = httpx.Client(timeout=30)
         enviar_fn = lambda msgs: enviar(msgs, token, chat_id, cliente_tg)  # noqa: E731
 
-    try:
-        from monitor.navegador import renderizar
-        import playwright  # noqa: F401
-    except ImportError:
-        print("Playwright não instalado: só a etapa 1 (HTTP) será usada.")
-        renderizar = None
+    # Sem a etapa do navegador, ~50 casas com aviso próprio virariam 🟢 falsas:
+    # se o Playwright faltar, a rodada falha em vez de seguir só com o HTTP.
+    from monitor.navegador import renderizar
 
     with novo_cliente() as cliente:
         mudancas = executar(
@@ -86,7 +82,10 @@ def main() -> None:
             renderizar,
         )
 
-    totais = ler_estado(Path("dados/status.json"))["totais"]
+    estado = ler_estado(Path("dados/status.json"))
+    if estado.get("ultima_rodada_valida") != estado["ultima_rodada"]:
+        print("Rodada descartada: falhas de rede em mais da metade dos sites.")
+    totais = estado["totais"]
     print(
         f"🔴 {totais['bloqueado']} bloqueadas · 🟢 {totais['respondendo']} respondendo · "
         f"⚪ {totais['indeterminado']} indeterminadas · {len(mudancas)} mudança(s)"

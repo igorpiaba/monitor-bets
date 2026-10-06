@@ -211,7 +211,11 @@
       if (s.liminar) nome.append(el("span", { className: "etiqueta", textContent: "liminar" }));
       return el("li", { className: s.status },
         el("span", { className: "bolinha", title: ROTULO[s.status] }),
-        el("div", {}, nome, el("div", { className: "detalhe", textContent: `${ROTULO[s.status]} · ${s.motivo}` })),
+        el("div", {}, nome, el("div", {
+          className: "detalhe",
+          textContent: `${ROTULO[s.status]} · ${s.motivo}` +
+            (s.pendente ? ` · aguardando confirmação: ${ROTULO[s.pendente.status]}` : ""),
+        })),
         el("div", { className: "tempo", textContent: haQuanto(s.desde) }));
     }));
     if (!visiveis.length) lista.replaceChildren(el("li", { className: "vazio", textContent: "Nenhuma casa encontrada." }));
@@ -237,8 +241,10 @@
       for (const k of ["bloqueado", "respondendo", "indeterminado"]) {
         document.getElementById(`n-${k}`).textContent = estado.totais[k];
       }
-      document.getElementById("checagem").textContent = `Última checagem: ${haQuanto(estado.ultima_rodada)}.`;
-      const minutos = (Date.now() - new Date(estado.ultima_rodada)) / 60000;
+      // Rodadas descartadas (falha de rede) não contam como checagem.
+      const ultimaValida = estado.ultima_rodada_valida || estado.ultima_rodada;
+      document.getElementById("checagem").textContent = `Última checagem: ${haQuanto(ultimaValida)}.`;
+      const minutos = (Date.now() - new Date(ultimaValida)) / 60000;
       document.getElementById("parado").style.display = minutos > LIMITE_PARADO_MIN ? "block" : "none";
       desenharLista();
     } catch (e) {

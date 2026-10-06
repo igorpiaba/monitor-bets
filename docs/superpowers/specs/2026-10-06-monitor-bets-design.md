@@ -141,7 +141,7 @@ Para cada site, comparando o status observado com o status atual:
 2. Observado ≠ atual e `pendente` vazio ou com outro status → grava `pendente` com o observado.
 3. Observado ≠ atual e `pendente` com o mesmo status → **confirma a mudança**: atualiza `status` e `desde`, limpa `pendente`, acrescenta linha no histórico e gera um aviso (exceto quando o novo status for `indeterminado`).
 
-**Proteção contra falha de rede:** se mais de 50% dos sites derem `indeterminado` na mesma rodada, a rodada é descartada. Nada muda além de `ultima_rodada`, e nenhum aviso sai.
+**Proteção contra falha de rede:** se mais de 50% dos sites derem `indeterminado` **por falha de rede** (timeout, erro de conexão, erro do navegador; anti-robô e página de erro não contam), a rodada é descartada. Nada muda além de `ultima_rodada`, e nenhum aviso sai. `ultima_rodada_valida` só avança em rodadas não descartadas, e é ela que o painel usa para o aviso "o monitor pode estar parado".
 
 **Primeira rodada (sem `status.json`):** o status observado vira o status inicial, sem pendência e sem aviso.
 
@@ -150,10 +150,12 @@ Para cada site, comparando o status observado com o status atual:
 - Destino: um canal do Telegram em que o bot é administrador. Os amigos entram pelo link de convite.
 - Credenciais `TELEGRAM_TOKEN` e `TELEGRAM_CHAT_ID` ficam nos **Secrets** do GitHub, nunca no código.
 - **Uma mensagem por rodada** com todas as mudanças confirmadas, agrupadas:
-  - 🟢 "Betano (betano.bet.br) parou de redirecionar para o gov.br e está respondendo. Bloqueada desde 25/09 00:10."
-  - 🔴 "Betano (betano.bet.br) voltou a redirecionar para o gov.br."
+  - 🟢 "Betano (betano.bet.br) voltou a abrir sem aviso de bloqueio. Fora do ar desde 25/09 00:10."
+  - 🔴 "Betano (betano.bet.br) voltou a ficar fora do ar."
 - Mudanças para `indeterminado` não geram alerta.
-- Uma mudança só gera alerta se o novo status for diferente de `ultimo_definido`. Exemplo: 🔴 → ⚪ → 🔴 não avisa nada; 🔴 → ⚪ → 🟢 avisa a volta.
+- Alerta 🟢 quando o novo status é `respondendo` e `ultimo_definido` não era `respondendo`; alerta 🔴 só quando `ultimo_definido` era `respondendo`. Exemplos: 🔴 → ⚪ → 🔴 e ⚪ → 🔴 não avisam; 🔴 → ⚪ → 🟢 avisa a volta. (Revisado após a revisão final.)
+- Uma observação ⚪ não apaga uma mudança 🟢/🔴 em confirmação; o `motivo` exibido só muda junto com o status.
+- Sem token do Telegram, os alertas ficam em `avisos_pendentes` até o envio funcionar.
 - Toda mensagem termina com o link do painel.
 - Se o envio falhar, as mudanças vão para `avisos_pendentes` e são reenviadas na rodada seguinte.
 - Mensagens longas são divididas no limite do Telegram (4.096 caracteres).

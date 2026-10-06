@@ -17,14 +17,14 @@ def mudanca(site="betano.bet.br", casa="Betano", de="bloqueado", para="responden
 def test_mensagem_verde_com_desde():
     [msg] = montar_mensagens([mudanca()], PAINEL)
     assert msg.splitlines()[0] == (
-        "🟢 Betano (betano.bet.br) parou de redirecionar para o gov.br e está "
-        "respondendo. Bloqueada desde 25/09 00:10."
+        "🟢 Betano (betano.bet.br) voltou a abrir sem aviso de bloqueio. "
+        "Fora do ar desde 25/09 00:10."
     )
 
 
 def test_verde_vindo_de_indeterminado_sem_desde():
     [msg] = montar_mensagens([mudanca(de="indeterminado")], PAINEL)
-    assert "Bloqueada desde" not in msg
+    assert "Fora do ar desde" not in msg
 
 
 def test_agrupa_numa_mensagem_verdes_primeiro():
@@ -38,7 +38,7 @@ def test_agrupa_numa_mensagem_verdes_primeiro():
 
     linhas = msg.splitlines()
     assert [l[0] for l in linhas[:3]] == ["🟢", "🟢", "🔴"]
-    assert linhas[2] == "🔴 A (a.bet.br) voltou a redirecionar para o gov.br."
+    assert linhas[2] == "🔴 A (a.bet.br) voltou a ficar fora do ar."
     assert linhas[3] == ""
     assert linhas[4] == "Painel: https://x"
 
