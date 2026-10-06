@@ -905,11 +905,11 @@
     "example.com": {
       "casa": "Teste",
       "liminar": false,
-      "status": "respondendo",
-      "desde": "2026-10-06T09:56:02-03:00",
+      "status": "bloqueado",
+      "desde": "2026-09-25T00:10:00-03:00",
       "motivo": "sem aviso",
       "ultima_checagem": "2026-10-06T09:56:02-03:00",
-      "ultimo_definido": "respondendo",
+      "ultimo_definido": "bloqueado",
       "pendente": null
     },
     "f12.bet.br": {
