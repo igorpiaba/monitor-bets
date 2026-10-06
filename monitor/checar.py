@@ -31,7 +31,7 @@ def novo_cliente() -> httpx.Client:
     )
 
 
-def _eh_gov(host: str) -> bool:
+def eh_gov(host: str) -> bool:
     return host == HOST_GOV or host.endswith("." + HOST_GOV)
 
 
@@ -48,7 +48,7 @@ def checar(site: str, cliente: httpx.Client) -> Resultado:
                 if not destino:
                     return Resultado(INDETERMINADO, f"{codigo} sem Location")
                 url = resp.url.join(destino)
-                if _eh_gov(url.host):
+                if eh_gov(url.host):
                     return Resultado(BLOQUEADO, f"{codigo} -> {url.host}")
                 continue
             if 200 <= codigo < 300:

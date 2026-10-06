@@ -1,0 +1,14 @@
+# Marcadores de aviso: se o texto da página tiver qualquer um deles,
+# a casa conta como bloqueada (não está operando).
+# Um por linha; maiúsculas e minúsculas não importam.
+1.394
+brasilsembets
+indispon
+medida provisória
+manutenção
+maintenance
+acreditamos na regulamentação
+encerramento das atividades
+voltamos em breve
+voltaremos em breve
+encerrou suas atividades

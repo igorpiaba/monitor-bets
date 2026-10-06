@@ -4,8 +4,17 @@ from monitor.arquivos import (
     escrever_casas,
     ler_casas,
     ler_estado,
+    ler_marcadores,
     salvar_estado,
 )
+
+
+def test_ler_marcadores(tmp_path):
+    caminho = tmp_path / "marcadores.txt"
+    caminho.write_text("# comentário\n1.394\n\nIndispon\n", encoding="utf-8")
+
+    assert ler_marcadores(caminho) == ["1.394", "indispon"]
+    assert ler_marcadores(tmp_path / "nao-existe.txt") == []
 
 
 def test_casas_ida_e_volta(tmp_path):

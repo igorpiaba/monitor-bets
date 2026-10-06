@@ -32,6 +32,13 @@ def escrever_casas(caminho: Path, casas: list[Casa]) -> None:
             escritor.writerow([c.casa, c.site, "sim" if c.liminar else "nao"])
 
 
+def ler_marcadores(caminho: Path) -> list[str]:
+    if not caminho.exists():
+        return []
+    linhas = (l.strip().lower() for l in caminho.read_text(encoding="utf-8").splitlines())
+    return [l for l in linhas if l and not l.startswith("#")]
+
+
 def ler_estado(caminho: Path) -> dict:
     if not caminho.exists():
         return {}

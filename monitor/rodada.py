@@ -11,9 +11,16 @@ from zoneinfo import ZoneInfo
 
 import httpx
 
-from monitor.arquivos import anexar_historico, ler_casas, ler_estado, salvar_estado
+from monitor.arquivos import (
+    anexar_historico,
+    ler_casas,
+    ler_estado,
+    ler_marcadores,
+    salvar_estado,
+)
 from monitor.checar import checar_todos, novo_cliente
 from monitor.estado import Mudanca, aplicar_rodada
+from monitor.navegador import Pagina, refinar
 from monitor.telegram import enviar, montar_mensagens
 
 
@@ -23,11 +30,15 @@ def executar(
     agora: datetime,
     enviar_fn: Callable[[list[str]], bool] | None,
     painel_url: str,
+    renderizar_fn: Callable[[list[str]], dict[str, Pagina | str]] | None = None,
 ) -> list[Mudanca]:
     casas = ler_casas(pasta_dados / "casas.csv")
     estado = ler_estado(pasta_dados / "status.json")
 
     observados = checar_todos([c.site for c in casas], cliente)
+    if renderizar_fn:
+        marcadores = ler_marcadores(pasta_dados / "marcadores.txt")
+        observados = refinar(observados, renderizar_fn, marcadores)
     novo, mudancas = aplicar_rodada(estado, casas, observados, agora)
 
     if mudancas:
@@ -58,6 +69,13 @@ def main() -> None:
         cliente_tg = httpx.Client(timeout=30)
         enviar_fn = lambda msgs: enviar(msgs, token, chat_id, cliente_tg)  # noqa: E731
 
+    try:
+        from monitor.navegador import renderizar
+        import playwright  # noqa: F401
+    except ImportError:
+        print("Playwright não instalado: só a etapa 1 (HTTP) será usada.")
+        renderizar = None
+
     with novo_cliente() as cliente:
         mudancas = executar(
             Path("dados"),
@@ -65,6 +83,7 @@ def main() -> None:
             datetime.now(ZoneInfo("America/Sao_Paulo")),
             enviar_fn,
             painel_url,
+            renderizar,
         )
 
     totais = ler_estado(Path("dados/status.json"))["totais"]

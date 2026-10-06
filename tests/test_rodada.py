@@ -43,9 +43,24 @@ def pasta(tmp_path):
     return tmp_path
 
 
-def rodar(pasta, internet, telegram, minuto):
+def rodar(pasta, internet, telegram, minuto, renderizar_fn=None):
     agora = datetime(2026, 10, 6, 14, minuto, tzinfo=ZoneInfo("America/Sao_Paulo"))
-    return executar(pasta, internet.cliente(), agora, telegram, "https://painel")
+    return executar(pasta, internet.cliente(), agora, telegram, "https://painel",
+                    renderizar_fn=renderizar_fn)
+
+
+def test_rodada_com_navegador(pasta):
+    (pasta / "marcadores.txt").write_text("1.394\n", encoding="utf-8")
+    internet = Internet()
+    internet.respondendo.add("a.bet.br")
+    aviso = "Site indisponível em cumprimento à Medida Provisória nº 1.394/2026. Saques garantidos."
+
+    rodar(pasta, internet, Telegram(), 0,
+          renderizar_fn=lambda sites: {s: (aviso, f"https://{s}/") for s in sites})
+
+    estado = json.loads((pasta / "status.json").read_text(encoding="utf-8"))
+    assert estado["sites"]["a.bet.br"]["status"] == "bloqueado"
+    assert estado["sites"]["a.bet.br"]["motivo"] == "aviso: 1.394"
 
 
 def test_primeira_rodada_cria_arquivos(pasta):
