@@ -4,6 +4,7 @@ Acompanha, a cada ~10 minutos, se as casas de apostas regulamentadas no Brasil c
 
 - **Painel:** https://igorpiaba.github.io/monitor-bets/
 - **Alertas:** canal privado do Telegram (peça o link de convite ao Igor)
+- **Consulta:** no chat privado com o **@DronhaBot**, mande `/status` (placar e casas no ar) ou `/casa nome` (ex.: `/casa betano`). Só responde com o Mac do Igor acordado.
 
 ## Como funciona
 
@@ -25,6 +26,7 @@ python3 -m venv .venv && .venv/bin/pip install httpx playwright pytest
 - **Agendamento (launchd):** `com.igorpiaba.monitor-bets.plist`, instalado em `~/Library/LaunchAgents/`. Log em `.logs/monitor.log`.
   - Parar: `launchctl bootout gui/$(id -u)/com.igorpiaba.monitor-bets`
   - Ligar: `launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.igorpiaba.monitor-bets.plist`
+- **Bot de comandos (launchd, sempre ligado):** `com.igorpiaba.monitor-bets-bot.plist` roda `bot.sh` (`monitor/bot.py`). Log em `.logs/bot.log`.
 - **Token do Telegram:** fica no Keychain do macOS (serviço `monitor-bets-telegram`), nunca no repositório.
 - **Atualizar a lista oficial da SPA:** `.venv/bin/python importar_lista.py` (mostra as casas que entraram e saíram).
 - **Aviso novo que não é reconhecido:** acrescente uma linha em `dados/marcadores.txt`.
