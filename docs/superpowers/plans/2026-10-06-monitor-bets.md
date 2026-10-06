@@ -16,7 +16,7 @@
 - Python ≥ 3.12; dependências de execução: só `httpx`. Testes: `pytest`.
 - Status são exatamente as strings `bloqueado`, `respondendo`, `indeterminado`.
 - Host do bloqueio: `brasilsembets.gov.br` e qualquer subdomínio dele (ex.: `www.brasilsembets.gov.br`).
-- Timeout 15 s por site; 20 checagens em paralelo; no máximo 10 redirecionamentos.
+- Etapa 1 (HTTP): timeout 15 s por site; 20 checagens em paralelo; no máximo 10 redirecionamentos. Etapa 2 (navegador): 8 em paralelo, timeout 30 s, espera 6 s.
 - Confirmação: 2 observações seguidas. Rodada descartada se > 50% dos sites derem `indeterminado`.
 - Fuso de todos os horários: `America/Sao_Paulo`, em ISO 8601 com offset (ex.: `2026-10-06T14:30:00-03:00`).
 - Arquivos de dados em UTF-8; `casas.csv` com cabeçalho `casa,site,liminar`; `historico.csv` com cabeçalho `data_hora,casa,site,de,para,motivo`.
@@ -161,6 +161,42 @@ exceções: httpx.TimeoutException → "timeout"; httpx.ConnectError → "erro d
 Esperado: as duas primeiras `bloqueado`; a bet365 provavelmente `indeterminado` ("403").
 
 - [ ] **Step 6: Commit:** `git add -A && git commit -m "feat: detecção de bloqueio por redirecionamento"`
+
+---
+
+### Task 2b: Segunda etapa de detecção com navegador (`navegador.py`)
+
+> Acrescentada em 06/10/2026, depois da primeira rodada real (spec, seção 5 revisada). Entra antes da Task 7.
+
+**Files:**
+- Create: `monitor/navegador.py`, `tests/test_navegador.py`, `dados/marcadores.txt`
+- Modify: `monitor/arquivos.py` (+ `ler_marcadores`), `monitor/rodada.py` (+ parâmetro `renderizar_fn`), `tests/test_arquivos.py`, `tests/test_rodada.py`, `pyproject.toml` (+ `playwright`)
+
+**Interfaces:**
+- Produces:
+  - `ler_marcadores(caminho: Path) -> list[str]`, em `arquivos.py`: em minúsculas, sem linhas vazias nem `#`; `[]` se o arquivo não existir
+  - `classificar_texto(texto: str, url_final: str, marcadores: list[str]) -> Resultado`: a tabela da spec, seção 5, na ordem dada
+  - `Pagina = tuple[str, str]`, ou seja, `(texto, url_final)`; um `str` sozinho no lugar significa erro
+  - `renderizar(sites: list[str], paralelo: int = 8, espera_ms: int = 6000) -> dict[str, Pagina | str]` (Playwright assíncrono por dentro; síncrono por fora via `asyncio.run`)
+  - `refinar(observados: dict[str, Resultado], renderizar_fn: Callable[[list[str]], dict[str, Pagina | str]], marcadores: list[str]) -> dict[str, Resultado]`: manda para `renderizar_fn` (numa só chamada) todo site cujo status não é `bloqueado`; os demais ficam como vieram
+- `executar(..., renderizar_fn=None)`: sem `renderizar_fn`, mantém a etapa 1 pura (testes antigos continuam valendo); `main()` usa `navegador.renderizar` e cai para `None` se `import playwright` falhar
+
+- [ ] **Step 1: Testes que falham**
+  - `test_ler_marcadores`: arquivo com `"# comentário\n1.394\n\nIndispon\n"` → `["1.394", "indispon"]`; inexistente → `[]`.
+  - `test_classificar_js_para_gov`: `url_final="https://www.brasilsembets.gov.br/"` → `Resultado("bloqueado", "js -> www.brasilsembets.gov.br")`.
+  - `test_classificar_anti_robo`: `"x.bet.br Executando verificação de segurança ..."` → `indeterminado`, `"anti-robô"`.
+  - `test_classificar_pagina_vazia`: `"  "` → `indeterminado`, `"página vazia"`.
+  - `test_classificar_aviso`: texto de 60+ caracteres com `"Medida Provisória nº 1.394/2026"` → `Resultado("bloqueado", "aviso: 1.394")` (primeiro marcador da lista que casar).
+  - `test_classificar_manifesto_por_cima_do_cassino`: o trecho real da F12 (`"Cassino Esportes Entrar Cadastre-se ... Manifesto Nós acreditamos no Brasil, e acreditamos na regulamentação."`) → `bloqueado`.
+  - `test_classificar_sem_aviso`: texto normal de cassino com 60+ caracteres → `Resultado("respondendo", "sem aviso")`.
+  - `test_refinar_so_nao_bloqueados`: observados `{a: bloqueado, b: respondendo, c: indeterminado}` → `renderizar_fn` chamado uma vez com `["b.bet.br", "c.bet.br"]`; `a` intacto.
+  - `test_refinar_erro_do_navegador`: `renderizar_fn` devolve `"TimeoutError"` para `b` → `Resultado("indeterminado", "navegador: TimeoutError")`.
+  - `test_rodada_com_navegador` (em `test_rodada.py`): site que dá 200 na etapa 1, mas cujo `renderizar_fn` falso devolve texto de aviso → `status.json` com `bloqueado`.
+- [ ] **Step 2: Rodar e ver falhar.**
+- [ ] **Step 3: Implementar.** `renderizar` usa `chromium.launch()`, `new_page(locale="pt-BR", user_agent=USER_AGENT)`, `goto(wait_until="domcontentloaded", timeout=30000)`, `wait_for_timeout(espera_ms)`, `inner_text("body")` e `page.url`; um `asyncio.Semaphore(paralelo)`; a exceção vira `type(e).__name__`.
+- [ ] **Step 4: Rodar e ver passar:** `.venv/bin/pytest -v`.
+- [ ] **Step 5: Rodada real local:** `rm dados/status.json && .venv/bin/python -m monitor.rodada`. Esperado: 0 `respondendo`, ou só casos que, conferidos no navegador, estão no ar de verdade; e o tempo da rodada abaixo de ~3 min.
+- [ ] **Step 6: Commit:** `git add -A && git commit -m "feat: segunda etapa de detecção com navegador"`
 
 ---
 
@@ -349,8 +385,8 @@ Esperado: o repositório aparece em `https://github.com/<usuário>/monitor-bets`
 Conteúdo decidido:
 - Gatilhos: `schedule: - cron: "*/10 * * * *"` e `workflow_dispatch`.
 - `permissions: contents: write`; `concurrency: { group: monitor, cancel-in-progress: false }`.
-- Passos: checkout → `actions/setup-python` (3.12) → `pip install httpx` → `python -m monitor.rodada` com `env` vindo de `secrets.TELEGRAM_TOKEN`, `secrets.TELEGRAM_CHAT_ID` e `vars.PAINEL_URL` → commit e push de `dados/` como `github-actions[bot]`, com a mensagem `atualiza status`. Só faz commit se `git status --porcelain dados/` não estiver vazio; antes do push, `git pull --rebase`.
-- `timeout-minutes: 5`.
+- Passos: checkout → `actions/setup-python` (3.12) → `pip install httpx playwright` → `python -m playwright install --with-deps chromium` → `python -m monitor.rodada` com `env` vindo de `secrets.TELEGRAM_TOKEN`, `secrets.TELEGRAM_CHAT_ID` e `vars.PAINEL_URL` → commit e push de `dados/` como `github-actions[bot]`, com a mensagem `atualiza status`. Só faz commit se `git status --porcelain dados/` não estiver vazio; antes do push, `git pull --rebase`.
+- `timeout-minutes: 10`.
 
 - [ ] **Step 1: Escrever `monitor.yml` com o `schedule` comentado**, para que só a execução manual funcione por enquanto. Commit e push.
 - [ ] **Step 2: Rodar manualmente:** `gh workflow run monitor.yml` e acompanhar com `gh run watch`. Esperado: sucesso e um commit novo `atualiza status`.

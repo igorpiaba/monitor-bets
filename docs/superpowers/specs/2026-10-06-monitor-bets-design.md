@@ -57,18 +57,30 @@ Cada módulo tem uma responsabilidade: `checar.py` não sabe de estado, `estado.
 
 ## 5. Detecção
 
-**Entrada:** um domínio. **Saída:** status + motivo.
+**Entrada:** um domínio. **Saída:** status + motivo. São duas etapas.
 
-- Requisição GET para `https://<site>/`, com User-Agent de navegador, seguindo redirecionamentos e registrando cada salto.
-- Timeout de 15 s por site, ~20 checagens em paralelo. Uma rodada completa deve levar menos de 1 minuto.
+> Revisado em 06/10/2026, depois da primeira rodada real: 54 casas não redirecionavam mais e mostravam uma **página própria de aviso** (algumas montadas por JavaScript). Elas continuam fora do ar. Por isso, `bloqueado` passa a significar **"não está operando"**: redireciona para o gov.br **ou** mostra aviso.
 
-| Status | Regra |
-|---|---|
-| `bloqueado` 🔴 | Algum salto ou URL final tem host `brasilsembets.gov.br` ou um subdomínio dele |
-| `respondendo` 🟢 | Resposta final 2xx sem passar pelo gov.br |
-| `indeterminado` ⚪ | 403, 429, 5xx, outro código, timeout, falha de DNS, erro de TLS. O motivo é registrado |
+**Etapa 1, rápida (HTTP):** GET em `https://<site>/` com User-Agent de navegador, seguindo os redirecionamentos à mão. Timeout de 15 s e 20 em paralelo.
+- Algum salto leva a `brasilsembets.gov.br` ou a um subdomínio dele → `bloqueado` (fim).
+- Qualquer outro resultado segue para a etapa 2.
 
-O status se chama "respondendo", e não "voltou", porque o script mede só que o site parou de redirecionar e abriu, e não que voltou a aceitar apostas. As mensagens dizem exatamente isso.
+**Etapa 2, navegador de verdade (Playwright/Chromium):** só para quem não foi resolvido na etapa 1. Abre a página, espera ~6 s para o JavaScript rodar e lê o texto visível. 8 em paralelo, timeout de 30 s.
+
+| Ordem | Condição | Status | Motivo |
+|---|---|---|---|
+| 1 | URL final no gov.br (redirecionamento por JavaScript) | `bloqueado` 🔴 | `js -> <host>` |
+| 2 | Texto com marca de anti-robô ("verificação de segurança", "just a moment", "checking your browser") | `indeterminado` ⚪ | `anti-robô` |
+| 3 | Texto visível com menos de 50 caracteres | `indeterminado` ⚪ | `página vazia` |
+| 4 | Texto contém algum **marcador de aviso** | `bloqueado` 🔴 | `aviso: <marcador>` |
+| 5 | Caso contrário | `respondendo` 🟢 | `sem aviso` |
+| — | Erro ou timeout no navegador | `indeterminado` ⚪ | `navegador: <erro>` |
+
+A comparação ignora maiúsculas e minúsculas. Os marcadores ficam em `dados/marcadores.txt`, um por linha, editável sem mexer no código (linhas vazias e começando com `#` são ignoradas). Lista inicial: `1.394`, `brasilsembets`, `indispon`, `medida provisória`, `manutenção`, `maintenance`, `acreditamos na regulamentação`, `encerramento das atividades`.
+
+Se a etapa 2 não estiver disponível (Playwright não instalado), o resultado da etapa 1 vale como está: 2xx = `respondendo`, demais = `indeterminado`.
+
+"Respondendo" quer dizer que a página abriu sem nenhum aviso conhecido. Não garante que a casa voltou a aceitar apostas, e as mensagens dizem exatamente isso.
 
 ## 6. Dados
 
