@@ -25,3 +25,14 @@ jobs:
           for i, (tipo, nome) in chats.items(): print(f"{i}  {tipo}  {nome}")
           if not chats: print("Nenhum chat encontrado: publique uma mensagem no canal e rode de novo.")
           '
+
+      - name: Mensagem de teste
+        if: ${{ secrets.TELEGRAM_CHAT_ID != '' }}
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage" \
+            -d chat_id="${TELEGRAM_CHAT_ID}" \
+            --data-urlencode text="✅ Teste do Monitor Bets: o robô consegue publicar neste canal." \
+            | python3 -c 'import json,sys; r=json.load(sys.stdin); print("enviado" if r.get("ok") else r)'
