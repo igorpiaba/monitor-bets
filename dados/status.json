@@ -1,5 +1,5 @@
 {
-  "ultima_rodada": "2026-10-06T09:57:40-03:00",
+  "ultima_rodada": "2026-10-06T09:59:16-03:00",
   "avisos_pendentes": [],
   "sites": {
     "1pra1.bet.br": {
@@ -8,7 +8,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -18,7 +18,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: indispon",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -28,7 +28,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "js -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -38,7 +38,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -48,7 +48,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "navegador: Error",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -58,7 +58,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "página de erro",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -68,7 +68,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -78,7 +78,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -88,7 +88,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -98,7 +98,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -108,7 +108,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -118,7 +118,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -128,7 +128,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: voltamos em breve",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -138,7 +138,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -148,7 +148,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -158,7 +158,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -168,7 +168,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -178,7 +178,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -188,7 +188,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -198,7 +198,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -208,7 +208,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: indispon",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -217,10 +217,13 @@
       "liminar": false,
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
-      "motivo": "aviso: dia de sorte: título vazio",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "motivo": "sem aviso",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
-      "pendente": null
+      "pendente": {
+        "status": "respondendo",
+        "visto_em": "2026-10-06T09:59:16-03:00"
+      }
     },
     "apostatudo.bet.br": {
       "casa": "Apostatudo",
@@ -228,7 +231,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -238,7 +241,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -248,7 +251,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "navegador: Error",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -258,7 +261,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -268,7 +271,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -278,7 +281,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -288,7 +291,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "página vazia",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -298,7 +301,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -308,7 +311,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "navegador: Error",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -318,7 +321,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -328,7 +331,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -338,7 +341,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -348,7 +351,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -358,7 +361,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -368,7 +371,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -378,7 +381,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -388,7 +391,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -398,7 +401,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -408,7 +411,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -418,7 +421,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "página de erro",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -428,7 +431,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -438,7 +441,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: voltaremos em breve",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -448,7 +451,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -458,7 +461,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "307 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -468,7 +471,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -478,7 +481,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -488,7 +491,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -498,7 +501,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -508,7 +511,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -518,7 +521,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -528,7 +531,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -538,7 +541,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -548,7 +551,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -558,7 +561,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -568,7 +571,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -578,7 +581,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: indispon",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -588,7 +591,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -598,7 +601,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -608,7 +611,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -618,7 +621,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -628,7 +631,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -638,7 +641,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "página vazia",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -648,7 +651,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -658,7 +661,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -668,7 +671,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: indispon",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -678,7 +681,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "navegador: Error",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -688,7 +691,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: acreditamos na regulamentação",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -698,7 +701,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -708,7 +711,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -718,7 +721,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -728,7 +731,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "navegador: Error",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -738,7 +741,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -748,7 +751,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -758,7 +761,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "navegador: Error",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -768,7 +771,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -778,7 +781,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -788,7 +791,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -798,7 +801,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "página de erro",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -808,7 +811,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -818,7 +821,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -828,7 +831,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -838,7 +841,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "página de erro",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -848,7 +851,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -858,7 +861,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -868,7 +871,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -878,7 +881,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "js -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -888,7 +891,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -898,22 +901,19 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
     "example.com": {
       "casa": "Teste",
       "liminar": false,
-      "status": "bloqueado",
-      "desde": "2026-09-25T00:10:00-03:00",
+      "status": "respondendo",
+      "desde": "2026-10-06T09:59:16-03:00",
       "motivo": "sem aviso",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
-      "ultimo_definido": "bloqueado",
-      "pendente": {
-        "status": "respondendo",
-        "visto_em": "2026-10-06T09:57:40-03:00"
-      }
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
+      "ultimo_definido": "respondendo",
+      "pendente": null
     },
     "f12.bet.br": {
       "casa": "F12.Bet",
@@ -921,7 +921,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: acreditamos na regulamentação",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -931,7 +931,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "página de erro",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -941,7 +941,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -951,7 +951,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -961,7 +961,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -971,7 +971,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: encerrou suas atividades",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -981,7 +981,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -991,7 +991,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1001,7 +1001,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: acreditamos na regulamentação",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1011,7 +1011,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1021,7 +1021,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1031,7 +1031,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1041,7 +1041,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: indispon",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1051,7 +1051,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1061,7 +1061,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1071,7 +1071,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1081,7 +1081,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1091,7 +1091,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1101,7 +1101,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "página vazia",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -1111,7 +1111,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1121,7 +1121,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1131,7 +1131,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "navegador: Error",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -1141,7 +1141,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "navegador: TimeoutError",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -1151,7 +1151,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1161,7 +1161,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "navegador: Error",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -1171,7 +1171,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1181,7 +1181,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1191,7 +1191,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "307 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1201,7 +1201,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1211,7 +1211,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: indispon",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1221,7 +1221,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1231,7 +1231,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1241,7 +1241,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1251,7 +1251,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: acreditamos na regulamentação",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1261,7 +1261,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1271,7 +1271,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1281,7 +1281,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1291,7 +1291,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1301,7 +1301,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "navegador: Error",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -1311,7 +1311,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: indispon",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1321,7 +1321,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1331,7 +1331,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1341,7 +1341,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1351,7 +1351,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1361,7 +1361,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "página de erro",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -1371,7 +1371,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1381,7 +1381,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "página vazia",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -1391,7 +1391,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1401,7 +1401,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1411,7 +1411,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1421,7 +1421,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1431,7 +1431,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: indispon",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1441,7 +1441,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1451,7 +1451,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "js -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1461,7 +1461,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "navegador: Error",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -1471,7 +1471,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1481,7 +1481,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1491,7 +1491,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "navegador: Error",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -1501,7 +1501,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1511,7 +1511,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1521,7 +1521,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1531,7 +1531,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1541,7 +1541,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1551,7 +1551,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1561,7 +1561,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "navegador: Error",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -1571,7 +1571,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1581,7 +1581,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: maintenance",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1591,7 +1591,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "navegador: Error",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -1601,7 +1601,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1611,7 +1611,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "307 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1621,7 +1621,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1631,7 +1631,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1641,7 +1641,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1651,7 +1651,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1661,7 +1661,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1671,7 +1671,7 @@
       "status": "respondendo",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "sem aviso",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "respondendo",
       "pendente": null
     },
@@ -1681,7 +1681,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1691,7 +1691,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1701,7 +1701,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1711,7 +1711,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1721,7 +1721,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1731,7 +1731,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1741,7 +1741,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1751,7 +1751,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1761,7 +1761,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1771,7 +1771,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "navegador: Error",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -1781,7 +1781,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1791,7 +1791,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1801,7 +1801,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1811,7 +1811,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1821,7 +1821,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1831,7 +1831,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1841,7 +1841,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "página de erro",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -1851,7 +1851,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "página de erro",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -1861,7 +1861,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1871,7 +1871,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "302 -> www.brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1881,7 +1881,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1891,7 +1891,7 @@
       "status": "indeterminado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "navegador: Error",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": null,
       "pendente": null
     },
@@ -1901,7 +1901,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: 1.394",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1911,7 +1911,7 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "301 -> brasilsembets.gov.br",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     },
@@ -1921,14 +1921,14 @@
       "status": "bloqueado",
       "desde": "2026-10-06T09:47:47-03:00",
       "motivo": "aviso: indispon",
-      "ultima_checagem": "2026-10-06T09:57:40-03:00",
+      "ultima_checagem": "2026-10-06T09:59:16-03:00",
       "ultimo_definido": "bloqueado",
       "pendente": null
     }
   },
   "totais": {
-    "bloqueado": 163,
-    "respondendo": 1,
+    "bloqueado": 162,
+    "respondendo": 2,
     "indeterminado": 28
   }
 }
