@@ -5,6 +5,10 @@ set -euo pipefail
 cd "$(dirname "$0")"
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.local/bin"
 
+# Trava: nunca duas rodadas ao mesmo tempo (agendada + manual).
+mkdir .logs/trava 2>/dev/null || { echo "outra rodada em andamento; saindo"; exit 0; }
+trap 'rmdir .logs/trava' EXIT
+
 echo "=== $(date '+%Y-%m-%d %H:%M:%S')"
 git pull --rebase -q
 
