@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Volta das Bets</title>
+<meta name="description" content="Status das casas de apostas regulamentadas desde a MP nº 1.394/2026.">
+<style>
+  :root {
+    --fundo: #f6f7f9;
+    --cartao: #ffffff;
+    --texto: #16181d;
+    --suave: #5d6470;
+    --borda: #e3e6eb;
+    --vermelho: #c9362b;
+    --verde: #1f8a4c;
+    --cinza: #8a919c;
+    --aviso-fundo: #fff4d6;
+    --aviso-texto: #6b4e00;
+    --destaque: #eef6f1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fundo: #0f1115;
+      --cartao: #171a20;
+      --texto: #e8eaee;
+      --suave: #9aa1ad;
+      --borda: #2a2f38;
+      --vermelho: #ff6b5e;
+      --verde: #4cd98a;
+      --cinza: #8a919c;
+      --aviso-fundo: #3a2f0b;
+      --aviso-texto: #ffd86b;
+      --destaque: #13261c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--fundo);
+    color: var(--texto);
+    font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 20px 16px 48px; }
+  h1 { font-size: 22px; margin: 0 0 2px; }
+  h2 { font-size: 16px; margin: 32px 0 10px; }
+  .sub { color: var(--suave); margin: 0 0 16px; font-size: 14px; }
+  .faixa {
+    display: none;
+    background: var(--aviso-fundo);
+    color: var(--aviso-texto);
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-bottom: 14px;
+    font-weight: 600;
+  }
+  .placar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .placar button {
+    font: inherit;
+    color: inherit;
+    text-align: left;
+    background: var(--cartao);
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    padding: 10px 12px;
+    cursor: pointer;
+  }
+  .placar button[aria-pressed="true"] { outline: 2px solid var(--texto); }
+  .placar strong { display: block; font-size: 26px; line-height: 1.1; }
+  .placar span { color: var(--suave); font-size: 13px; }
+  .ferramentas { display: flex; gap: 8px; margin: 16px 0 10px; }
+  input[type="search"] {
+    flex: 1;
+    font: inherit;
+    color: inherit;
+    background: var(--cartao);
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    padding: 9px 12px;
+  }
+  .lista { list-style: none; margin: 0; padding: 0; }
+  .lista li {
+    display: grid;
+    grid-template-columns: 14px 1fr auto;
+    gap: 10px;
+    align-items: center;
+    background: var(--cartao);
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin-bottom: 6px;
+  }
+  .lista li.respondendo { background: var(--destaque); }
+  .bolinha { width: 12px; height: 12px; border-radius: 50%; }
+  .bloqueado .bolinha { background: var(--vermelho); }
+  .respondendo .bolinha { background: var(--verde); }
+  .indeterminado .bolinha { background: var(--cinza); }
+  .nome { font-weight: 600; }
+  .nome a { color: var(--suave); font-weight: 400; font-size: 13px; text-decoration: none; margin-left: 4px; }
+  .detalhe { color: var(--suave); font-size: 13px; overflow-wrap: anywhere; }
+  .tempo { color: var(--suave); font-size: 13px; text-align: right; white-space: nowrap; }
+  .etiqueta {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    border: 1px solid var(--borda);
+    border-radius: 999px;
+    padding: 0 7px;
+    margin-left: 6px;
+    color: var(--suave);
+    vertical-align: 1px;
+  }
+  .mudancas { font-size: 14px; }
+  .mudancas li { padding: 6px 0; border-bottom: 1px solid var(--borda); list-style: none; }
+  .mudancas ul { margin: 0; padding: 0; }
+  .vazio { color: var(--suave); font-size: 14px; }
+  footer { margin-top: 32px; color: var(--suave); font-size: 12px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Volta das Bets</h1>
+  <p class="sub">Casas de apostas regulamentadas desde a MP nº 1.394/2026. <span id="checagem">Carregando…</span></p>
+
+  <div class="faixa" id="parado">⚠️ O monitor pode estar parado: a última checagem tem mais de 30 minutos.</div>
+
+  <div class="placar" id="placar">
+    <button data-filtro="bloqueado" aria-pressed="false"><strong id="n-bloqueado">–</strong><span>🔴 bloqueadas</span></button>
+    <button data-filtro="respondendo" aria-pressed="false"><strong id="n-respondendo">–</strong><span>🟢 respondendo</span></button>
+    <button data-filtro="indeterminado" aria-pressed="false"><strong id="n-indeterminado">–</strong><span>⚪ indeterminadas</span></button>
+  </div>
+
+  <h2>Últimas mudanças</h2>
+  <div class="mudancas" id="mudancas"><p class="vazio">Nenhuma mudança registrada ainda.</p></div>
+
+  <h2>Todas as casas</h2>
+  <div class="ferramentas">
+    <input type="search" id="busca" placeholder="Buscar casa ou site…" aria-label="Buscar casa ou site">
+  </div>
+  <ul class="lista" id="lista"></ul>
+
+  <footer>
+    🔴 bloqueada = redireciona para o gov.br ou mostra aviso de suspensão.
+    🟢 respondendo = a página abre sem aviso conhecido (não garante que aceita apostas).
+    ⚪ indeterminada = anti-robô, erro ou página vazia.
+    Lista oficial da SPA/Ministério da Fazenda. Checagem a cada ~10 minutos.
+  </footer>
+</main>
+
+<script>
+  const LIMITE_PARADO_MIN = 30;
+  const ROTULO = { bloqueado: "bloqueada", respondendo: "respondendo", indeterminado: "indeterminada" };
+
+  function baseDados() {
+    if (location.hostname.endsWith(".github.io")) {
+      const usuario = location.hostname.split(".")[0];
+      const repo = location.pathname.split("/")[1];
+      return `https://raw.githubusercontent.com/${usuario}/${repo}/main/dados/`;
+    }
+    return "../dados/";
+  }
+
+  function haQuanto(iso) {
+    const min = Math.max(0, Math.round((Date.now() - new Date(iso)) / 60000));
+    if (min < 1) return "agora";
+    if (min < 60) return `há ${min} min`;
+    const h = Math.round(min / 60);
+    if (h < 48) return `há ${h} h`;
+    return `há ${Math.round(h / 24)} dias`;
+  }
+
+  function dataCurta(iso) {
+    return new Date(iso).toLocaleString("pt-BR", {
+      day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit",
+      timeZone: "America/Sao_Paulo",
+    });
+  }
+
+  function lerCsv(texto) {
+    const [cabecalho, ...linhas] = texto.trim().split("\n");
+    const campos = cabecalho.split(",");
+    return linhas.filter(Boolean).map((linha) => {
+      const partes = linha.split(",");
+      // O último campo (motivo) pode ter vírgula: junta o que sobrar nele.
+      const valores = partes.slice(0, campos.length - 1);
+      valores.push(partes.slice(campos.length - 1).join(","));
+      return Object.fromEntries(campos.map((c, i) => [c, valores[i]]));
+    });
+  }
+
+  function el(tag, props = {}, ...filhos) {
+    const e = document.createElement(tag);
+    Object.assign(e, props);
+    e.append(...filhos);
+    return e;
+  }
+
+  let sites = [];
+  let filtro = null;
+
+  function desenharLista() {
+    const termo = document.getElementById("busca").value.trim().toLowerCase();
+    const lista = document.getElementById("lista");
+    const visiveis = sites.filter((s) =>
+      (!filtro || s.status === filtro) &&
+      (!termo || s.casa.toLowerCase().includes(termo) || s.site.includes(termo))
+    );
+    lista.replaceChildren(...visiveis.map((s) => {
+      const nome = el("div", { className: "nome" }, s.casa,
+        el("a", { href: `https://${s.site}/`, target: "_blank", rel: "noopener", textContent: s.site }));
+      if (s.liminar) nome.append(el("span", { className: "etiqueta", textContent: "liminar" }));
+      return el("li", { className: s.status },
+        el("span", { className: "bolinha", title: ROTULO[s.status] }),
+        el("div", {}, nome, el("div", { className: "detalhe", textContent: `${ROTULO[s.status]} · ${s.motivo}` })),
+        el("div", { className: "tempo", textContent: haQuanto(s.desde) }));
+    }));
+    if (!visiveis.length) lista.replaceChildren(el("li", { className: "vazio", textContent: "Nenhuma casa encontrada." }));
+  }
+
+  function desenharMudancas(historico) {
+    const ultimas = historico.slice(-20).reverse();
+    if (!ultimas.length) return;
+    const icone = { bloqueado: "🔴", respondendo: "🟢", indeterminado: "⚪" };
+    document.getElementById("mudancas").replaceChildren(el("ul", {}, ...ultimas.map((m) =>
+      el("li", { textContent: `${dataCurta(m.data_hora)} · ${m.casa}: ${icone[m.de] || ""} ${ROTULO[m.de] || m.de} → ${icone[m.para] || ""} ${ROTULO[m.para] || m.para}` })
+    )));
+  }
+
+  async function carregar() {
+    const base = baseDados();
+    const t = `?t=${Date.now()}`;
+    try {
+      const estado = await (await fetch(base + "status.json" + t)).json();
+      sites = Object.entries(estado.sites)
+        .map(([site, s]) => ({ site, ...s }))
+        .sort((a, b) => b.desde.localeCompare(a.desde) || a.casa.localeCompare(b.casa, "pt-BR"));
+      for (const k of ["bloqueado", "respondendo", "indeterminado"]) {
+        document.getElementById(`n-${k}`).textContent = estado.totais[k];
+      }
+      document.getElementById("checagem").textContent = `Última checagem: ${haQuanto(estado.ultima_rodada)}.`;
+      const minutos = (Date.now() - new Date(estado.ultima_rodada)) / 60000;
+      document.getElementById("parado").style.display = minutos > LIMITE_PARADO_MIN ? "block" : "none";
+      desenharLista();
+    } catch (e) {
+      document.getElementById("checagem").textContent = "Não foi possível carregar os dados.";
+    }
+    try {
+      const resp = await fetch(base + "historico.csv" + t);
+      if (resp.ok) desenharMudancas(lerCsv(await resp.text()));
+    } catch (e) { /* sem histórico ainda */ }
+  }
+
+  document.getElementById("busca").addEventListener("input", desenharLista);
+  document.querySelectorAll("#placar button").forEach((b) => b.addEventListener("click", () => {
+    filtro = filtro === b.dataset.filtro ? null : b.dataset.filtro;
+    document.querySelectorAll("#placar button").forEach((x) =>
+      x.setAttribute("aria-pressed", String(x.dataset.filtro === filtro)));
+    desenharLista();
+  }));
+
+  carregar();
+  setInterval(carregar, 5 * 60 * 1000);
+</script>
+</body>
+</html>

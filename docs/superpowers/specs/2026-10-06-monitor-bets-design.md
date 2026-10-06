@@ -24,7 +24,7 @@ Acompanhar a volta das casas de apostas regulamentadas no Brasil depois do bloqu
 | Tema | Decisão |
 |---|---|
 | Abordagem | Script próprio em Python + painel estático |
-| Execução | GitHub Actions, agendado a cada ~10 min (o GitHub pode atrasar até ~15 min) |
+| Execução | **No Mac do Igor** (launchd, a cada 10 min, `rodar.sh`), que faz push dos dados para o GitHub. Revisado em 06/10/2026: a rodada nos servidores do GitHub (EUA) mostrou 10 casas que bloqueiam só acessos do Brasil, o que geraria alertas falsos de "voltou". Enquanto o Mac dorme, não há checagem, e o painel avisa "o monitor pode estar parado". |
 | Painel | GitHub Pages |
 | Alertas | Canal do Telegram, via bot |
 | Lista de casas | Lista oficial da SPA/Fazenda + lista de autorizadas por decisão judicial (com etiqueta "liminar") |
